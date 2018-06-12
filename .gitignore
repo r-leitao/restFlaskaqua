@@ -1,0 +1,9 @@
+*.pyc
+*.env
+*.sqlite
+*.db
+*.cfg
+bin/
+lib/
+lib64/
+include/

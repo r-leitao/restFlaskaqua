@@ -1,0 +1,8 @@
+{% extends 'layouts/default.html' %}
+
+{% block body %}
+<h1>Show Index : {{ post.title }}</h1>
+<p>{{ post.content }}</p>
+
+<a href="{{ url_for('posts_index')}}"> ALL index</a>
+{% endblock body %}
