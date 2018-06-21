@@ -17,4 +17,6 @@ web:
     - ./app:/app
   expose:
     - "8000"
-  command: gunicorn app:app -b :8000 --name app --log-level=debug --log-file=-
+  environment:
+    - MODE=dev
+  command: gunicorn app:app -b :8000 --reload --name app --log-level=debug --log-file=/tmp/toto.log
